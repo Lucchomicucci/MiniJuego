@@ -1,15 +1,31 @@
 <html>
   <head>
-    <title></title>
+    <title>Paper, rock & scissors</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Make your choice:</h1>
-    <div>
-      <button onclick="choice('piedra')">Piedra</button>
-      <button onclick="choice('papel')">Papel</button>
-      <button onclick="choice('tijera')">Tijera</button>
+    
+    <div class="container">
+      <h1>Make your choice:</h1>
+      <button onclick="choice('piedra')">
+        <img src="./piedra.png" alt="">
+      </button>
+      <button onclick="choice('papel')">
+        <img src="./papel.png" alt="">
+      </button>
+      <button onclick="choice('tijera')">
+        <img src="./tijera.png" alt="">
+      </button>
     </div>
-
+    <div id="resultado" class="container">
+    </div>
+    <div id="historial" class="container">
+      <p>Total jugadas: 0</p>
+      <p>Ganadas: 0</p>
+      <p>Empatadas: 0</p>
+      <p>Perdidas: 0</p>
+    </div>
+    <button onclick="reset()">Reset</button>
     <script src="main.js"></script>
   </body>
 </html>
