@@ -15,7 +15,7 @@ const choice = (choice) => {
 
     empatadas += 1
     document.getElementById("resultado").innerHTML =
-      `<h2>EMPATE la maquina eligio ${choiceMachine}.</h2>`
+      `<h2 style="background-color: rgba(1, 1, 1, 0.9);">EMPATE la maquina eligio ${choiceMachine}.</h2>`
 
   } else if (choice == 'piedra' && choiceMachine == 'tijera' ||
     choice == 'papel' && choiceMachine == 'piedra' ||
@@ -23,12 +23,12 @@ const choice = (choice) => {
 
 
     ganadas += 1
-    document.getElementById("resultado").innerHTML = `<h2>GANASTE la maquina eligio ${choiceMachine}.</h2>`
+    document.getElementById("resultado").innerHTML = `<h2 style="background-color: green;">GANASTE la maquina eligio ${choiceMachine}.</h2>`
 
   } else {
 
     perdidas += 1
-    document.getElementById("resultado").innerHTML = `<h2>PERDISTE la maquina eligio ${choiceMachine}.</h2>`
+    document.getElementById("resultado").innerHTML = `<h2 style="background-color: red;">PERDISTE la maquina eligio ${choiceMachine}.</h2>`
 
   }
 

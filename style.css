@@ -7,9 +7,12 @@ body{
     text-align: center;
 }
 
+#historial{
+    background-color: rgba(1, 1, 1, 0.9);
+}
+
 #historial, #resultado{
     color: white;
-    background-color: rgba(1, 1, 1, 0.9);
     border-radius: 4rem;
     margin-top: 3rem;
 }
@@ -46,4 +49,5 @@ p {
 h2{
     margin: 0;
     padding: 1rem;
+    border-radius: 4rem;
 }
