@@ -33,10 +33,12 @@ const choice = (choice) => {
   }
 
   totalJugadas += 1
-  document.getElementById("historial").innerHTML = `<p>Total jugadas: ${totalJugadas}</p>
+  document.getElementById("historial").innerHTML = `<h2>Total jugadas: ${totalJugadas}</h2>
       <p>Ganadas: ${ganadas}</p>
       <p>Empatadas: ${empatadas}</p>
-      <p>Perdidas: ${perdidas}</p>`
+      <p>Perdidas: ${perdidas}</p>
+      <button type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+      `
 }
 const reset = () => {
   totalJugadas = 0;
@@ -44,7 +46,7 @@ const reset = () => {
   perdidas = 0;
   empatadas = 0;
   document.getElementById("resultado").innerHTML = ``
-  document.getElementById("historial").innerHTML = `<p>Total jugadas: ${totalJugadas}</p>
+  document.getElementById("historial").innerHTML = `<h2>Total jugadas: ${totalJugadas}</h2>
   <p>Ganadas: ${ganadas}</p>
   <p>Empatadas: ${empatadas}</p>
   <p>Perdidas: ${perdidas}</p>`
