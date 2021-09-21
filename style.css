@@ -10,7 +10,10 @@ body{
 #historial, #resultado{
     color: white;
     background-color: rgba(1, 1, 1, 0.9);
+    border-radius: 4rem;
+    margin-top: 3rem;
 }
+
 
 header h1{
     color: white;
@@ -43,8 +46,5 @@ p {
 
 h2{
     margin: 0;
-}
-
-section{
-    margin-top: 10rem;
+    padding: 1rem;
 }
